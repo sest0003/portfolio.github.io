@@ -496,10 +496,8 @@ opacity 0.5s ease-in-out;
 }
 
 .container-profile.active.big {
-
-    transform: scale(2.3) translate(-111%, -50%) !important;
-     transition: transform 0.5s  ease;
-
+    transform: scale(2.3) !important;
+     transition: transform 0.5s ease;
      align-items: center;
   
 }
