@@ -11,21 +11,16 @@
 }
 
 body {
+    padding: 5%;
     margin: 0 auto;
     background: #EEEEDD;
     font-size: 50px;
 }
 
-
-/*TYPEWRITER TEXT*/
-.heading-text{
-  margin-top: 50px;
-}
-
+/*TTYPEWRITER TEXT*/
 .header{
 text-decoration: underline;
 margin-bottom: 25px;
-
 }
 
 .medium-text{
@@ -79,7 +74,7 @@ text-align: center;
 .row{
  display:flex;
   justify-content: center;
-  margin-left: 170px;
+  margin-left: 343px;
 }
 
 
@@ -501,15 +496,15 @@ opacity 0.5s ease-in-out;
 }
 
 .container-profile.active.big {
-    transform: scale(2.3) translate(-111%, -50%) !important;
+    transform: scale(2.3) !important;
      transition: transform 0.5s ease;
-
+     align-items: center;
   
 }
 
 
 .profile-box {
-  border: 1px solid #c9c9c9;
+ border: 2px solid #b9b0a8;
   background: #fff;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
