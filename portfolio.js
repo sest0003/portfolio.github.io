@@ -5,6 +5,7 @@ let book3 = document.querySelector(".book3");
 let book4 = document.querySelector(".book4");
 const wrapper = document.querySelector(".wrapper");
 const bookShelf = document.getElementById("bookShelf");
+const shortBookshelf = document.querySelector(".book-shelf-short");
 let head = document.querySelector(".heading-text");
 let repoText = document.querySelector(".repo-text");
 let repoText2 = document.querySelector(".repo-text2");
@@ -37,6 +38,7 @@ setTimeout(function() {
 
 setTimeout(function() {
          profileCard.classList.add('active');
+         shortBookshelf.style.display = "block";
 }, 4900);
 
 setTimeout(function() {

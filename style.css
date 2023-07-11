@@ -84,9 +84,9 @@ justify-content: center;
 }
 
 .col-right {
-  display: flex;
+ 
   justify-content: flex-end;
-  width: 312px;
+  width: 304px;
 }
 
 /*CARDS*/
@@ -213,6 +213,8 @@ i {
 }
 
 
+/*BOOKSHELF*/
+
 .book-shelf {
 display: flex;
  margin: 0 auto;
@@ -223,6 +225,16 @@ display: flex;
   border-radius: 4px;
   background-color: #e0b289;
 }
+
+.book-shelf-short {
+  margin: 395px auto;
+  text-align: center;
+  width: 300px;
+  height: 10px;
+  border: 3px solid black;
+  border-radius: 4px;
+  background-color: #e0b289;
+  }
 
 
 .row#blur.active {
@@ -496,7 +508,7 @@ opacity 0.5s ease-in-out;
 }
 
 .container-profile.active.big {
-    transform: scale(2.3) !important;
+    transform: scale(2.3) translate(-103%, -50%) !important;
      transition: transform 0.5s ease;
      
   
@@ -504,7 +516,8 @@ opacity 0.5s ease-in-out;
 
 
 .profile-box {
- border: 2px solid #b9b0a8;
+  margin-left: 9px;
+  border: 1px solid #bdbdbd;
   background: #fff;
   border-radius: 3px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
