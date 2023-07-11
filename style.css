@@ -256,7 +256,7 @@ transition: box-shadow .3s;
 border: 3px solid black;
 position: relative;
 bottom: 0;
-left: 23%;
+left: 40%;
 transform: translate(-20%, -1%);
 width: 1330px;
 height: 77%;
@@ -285,10 +285,9 @@ transition: box-shadow .3s;
 border: 3px solid black;
 position: relative;
 bottom: 0;
-
 transform: translate(-20%, -1%);
-width: 1382px;
-height: 693px;
+width: 1079px;
+height: 720px;
 padding: 15px;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 background: #265c65;
@@ -315,9 +314,8 @@ transition: box-shadow .3s;
 border: 3px solid black;
 position: relative;
 bottom: 0;
-
 transform: translate(-20%, -1%);
-width: 1328px;
+width: 1079px;
 height: 46%;
 padding: 15px;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -346,7 +344,7 @@ padding: 13px;
 
 
 .image-wrapper{
-margin-top: 0%;
+
 background: #265c65;
 display: flex;
 justify-content: center;
@@ -355,8 +353,60 @@ gap:10px;
 padding: 10px;
 }
 
+.text-wrapper{
+  margin-top: -6px;
+  background: #265c65;
+  display: flex;
+  justify-content: center;
+  gap: 85px;
+  padding: 20px;
+  font-size: 23px;
+  height: 48px;
+  padding: 27px;
+  align-items: flex-end;
+}
+
+.text_box{
+z-index: 0;
+}
+
+/*FRAME POPUP*/
+.popup::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid lime;
+     border-radius: 17px;
+}
+
+.popup-git{
+  margin-top: 28px;
+  /* margin-right: 84px; */
+  z-index: 1;
+  font-size: 34px;
+  /* margin-bottom: 41%; */
+  padding: 11px;
+}
+ 
+
+.closeButton {
+  margin-left: 9px;
+  margin-top: 40px;
+  z-index: 1;
+  background-color: black;
+  margin-bottom: 1%;
+  color: white;
+  font-size: 13px;
+  padding: 8px 20px 5px 21px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+ }
+
+
 .plantify1-pic {
-  margin-bottom: 33px;
+  margin-bottom: 57px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -368,7 +418,7 @@ padding: 10px;
 }
 
 .plantify2-pic {
-  margin-bottom: 33px;
+  margin-bottom: 57px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -437,59 +487,6 @@ padding: 10px;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.text-wrapper{
-  margin-top: -6px;
-  background: #265c65;
-  display: flex;
-  justify-content: center;
-  gap: 85px;
-  padding: 20px;
-  font-size: 23px;
-  height: 48px;
-  padding: 27px;
-  align-items: flex-end;
-}
-
-.text_box{
-z-index: 0;
-}
-
-/*FRAME POPUP*/
-.popup::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border: 1px solid lime;
-     border-radius: 17px;
-}
-
-.popup-git{
-  margin-top: 28px;
-  /* margin-right: 84px; */
-  z-index: 1;
-  font-size: 34px;
-  /* margin-bottom: 41%; */
-  padding: 11px;
-}
- 
-
-
-.closeButton {
-  margin-left: 9px;
-  margin-top: 34px;
-  z-index: 1;
-  background-color: black;
-  margin-bottom: 1%;
-  color: white;
-  font-size: 13px;
-  padding: 8px 20px 5px 21px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
- }
-
-
 
 /*PROFILE CARD*/
 
@@ -510,8 +507,6 @@ opacity 0.5s ease-in-out;
 .container-profile.active.big {
     transform: scale(2.3) translate(-103%, -50%) !important;
      transition: transform 0.5s ease;
-     
-  
 }
 
 
