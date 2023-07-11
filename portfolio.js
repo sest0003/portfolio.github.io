@@ -21,6 +21,7 @@ const popup1 = document.getElementById("popup1");
 const popup2 = document.getElementById("popup2");
 const popup3 = document.getElementById("popup3");
 const popup5 = document.getElementById("popup5");
+const popup6 = document.getElementById("popup6");
 let closeButtons = document.getElementsByClassName("closeButton");
 let popups = [popup1, popup2, popup3, popup5];
 
@@ -157,6 +158,19 @@ function toggle(clickedCardId, card) {
         });
       scroll(popup5);
      }
+
+      //CARD 6
+     else if (clickedCardId === "card6") {
+
+      popups.forEach(function(popup) {
+       if (popup !== popup6) {
+           popup.style.display = "none";
+         } else {
+         popup.style.display = "block";
+         }
+           });
+         scroll(popup6);
+        }
 
 }
 
