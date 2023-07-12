@@ -23,7 +23,7 @@ const popup3 = document.getElementById("popup3");
 const popup5 = document.getElementById("popup5");
 const popup6 = document.getElementById("popup6");
 let closeButtons = document.getElementsByClassName("closeButton");
-let popups = [popup1, popup2, popup3, popup5];
+let popups = [popup1, popup2, popup3, popup5, popup6];
 
 let header = document.querySelector(".header");
 
