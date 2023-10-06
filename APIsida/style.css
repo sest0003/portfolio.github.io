@@ -1,0 +1,22 @@
+/* Använd CSS Grid för att ordna elementen i varje rad */
+.team {
+    display: grid;
+    grid-template-columns: 30px 1fr 1fr; /* Dela raden i tre kolumner */
+    grid-gap: 10px; /* Lägg till mellanrum mellan elementen om det behövs */
+    border: 0.5px solid #000; /* 1px tjock svart solid kant */
+    padding: 5px; 
+    border-radius: 3px;
+    padding: 7px 5px 5px 5px;
+}
+
+
+.allsvenskan{
+    width: 23%;
+
+}
+
+.tabelHeader{
+    display: flex;
+    justify-content: center;
+}
+

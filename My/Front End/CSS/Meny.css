@@ -1,0 +1,94 @@
+
+h1{
+   
+}
+
+body{
+    font-family: Arial;
+    background-color: rgb(242, 243, 190);
+    border-color: bisque;
+    font-size: medium;
+ position:;
+
+}
+
+.menu {
+    
+    border: solid;
+    color: pink;
+    background-color: hsl(56, 66%, 47%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.menu ul {
+  
+    display: flex;
+    column-gap: 15px;
+    padding-left: 0;
+    padding-top: 30x;
+    padding: 4px;
+}
+
+.menu a {
+text-decoration: none;
+}
+
+
+.menu .minor a{
+   font-weight: normal;
+   font-size: 16px;
+}
+
+.selected  a{
+border: solid 1px;
+background-color: rgb(195, 188, 201);
+color: black;
+border-radius: 15px;
+}
+
+.menu a:hovar{
+    border: solid 1px;
+}
+
+@media(max-width: 850px) {
+   body {  background-color: red; }
+
+   
+    .menu{ 
+        flex-direction:column; 
+       
+
+    }
+    .menu ul {
+        flex-direction:column; 
+        margin: 0;
+       
+    }
+
+    .menu li {
+        padding: 7px;
+        border: solid 1px;
+
+    }
+
+    .menu li.selected {
+       background-color: black;
+    }
+    
+    .menu li.selected a {
+        background-color: black;
+        color: white;
+        border-radius: 0;
+     }
+}
+
+
+

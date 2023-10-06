@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "scss.validate": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
