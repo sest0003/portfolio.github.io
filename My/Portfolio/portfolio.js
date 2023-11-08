@@ -19,9 +19,10 @@ let popup = document.querySelector(".popup");
 const popup1 = document.getElementById("popup1");
 const popup2 = document.getElementById("popup2");
 const popup3 = document.getElementById("popup3");
+const popup4 = document.getElementById("popup4");
 const popup5 = document.getElementById("popup5");
 let closeButtons = document.getElementsByClassName("closeButton");
-let popups = [popup1, popup2, popup3, popup5];
+let popups = [popup1, popup2, popup3, popup4, popup5];
 
 
 setTimeout(function() {
@@ -39,27 +40,25 @@ setTimeout(function() {
 
 setTimeout(function() {
          profileCard.classList.add('active');
-}, 4900);
+}, 490);
 
 setTimeout(function() {
          repoText.classList.add('active');
-}, 7000);
+}, 700);
 
 setTimeout(function() {
          repoText2.classList.add('active');
-}, 8000);
+}, 800);
 
 
 
 setTimeout(function showImage() {
    wrapper.classList.add('active');
-}, 8000);
+}, 800);
 
 profileCard.addEventListener("click", function() {
   profileCard.classList.toggle("big");
-  profilePic.style.left = "30%"
-    profilePic.style.top = "30%"
-  console.log("click");
+
 });
 
 function typewriter(element, delay) {
@@ -114,7 +113,6 @@ function toggle(clickedCardId, card) {
            popup.style.display = "block";
           }
         });
-
         scroll(popup1);
   }
 
@@ -128,8 +126,7 @@ function toggle(clickedCardId, card) {
          popup.style.display = "block";
         }
       });
-  scroll(popup2);
-
+      scroll(popup2);
   }
 
     //CARD3
@@ -142,9 +139,22 @@ function toggle(clickedCardId, card) {
            popup.style.display = "block";
           }
         });
-    scroll(popup3);
-
+        scroll(popup3);
     }
+
+    //Card 4
+    else if (clickedCardId === "card4") {
+
+    popups.forEach(function(popup) {
+     if (popup !== popup4) {
+          popup.style.display = "none";
+        } else {
+         popup.style.display = "block";
+        }
+      });
+      scroll(popup4);
+  }
+
  //CARD 5
   else if (clickedCardId === "card5") {
 
