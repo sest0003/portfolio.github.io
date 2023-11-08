@@ -1,3 +1,4 @@
+
 body {
     padding: 5%;
     margin: 0 auto;
@@ -30,6 +31,7 @@ opacity: 1;
 }
 
 h2{
+  
 text-align: center;
 }
 
@@ -79,6 +81,7 @@ font-family: 'Special Elite', cursive;
 }
 
 .wrapper {
+  width: 21em;
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -512,100 +515,6 @@ margin-top: 28px;
 }
 
 
-.container-profile {
- 
-  width: 467px;
-  height: 682px;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease-in-out;
-
-}
-
-.container-profile.active {
-  opacity: 1;
-}
-
-.container-profile.active.big {
-  width: 8em;
-  transform: scale(2.2) translate(-77%, 11%);
-  transition: transform 0.7s ease;
-  align-items: flex-end;
-}
-
-
-.profile-box {
- border: 2px solid #b9b0a8;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  position: relative;
-  overflow: hidden;
-}
-
-.profile-box .profile-picture {
-position: absolute;
-left: 32%;
-top: 33%;
-}
-
-.profile-box .profile-picture img {
-  border: 2px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 60px rgba(33,33,33,.2);
-  width: 150px; /* Ändra storleken på profilbilden */
-  height: 150px; /* Ändra storleken på profilbilden */
-}
-
-.profile-cover-image {
-  height: var(--coverImageHeight);
-  overflow: hidden;
-}
-
-.profile-cover-image img {
-  width: 100%;
-}
-
-.profile-content {
-  padding: 30px; /* Ändra paddingen */
-  text-align: center;
-}
-
-.profile-content h1 {
-      margin-top: 50px;
-  font-weight: normal;
-  margin-bottom: 0.2em;
-  font-size: 0.7em; /* Ändra storleken på rubriken */
-}
-
-.profile-content p {
-  font-size: 0.45em; /* Ändra storleken på texten */
-  line-height: 1.4;
-  color: #d2d2d2;
-}
-
-.profile-content .socials {
-  margin-top: 28.5px; /* Ändra marginalen */
-}
-
-.profile-content .socials a {
-  color: #d2d2d2;
-  margin: 0 2.5px; /* Ändra marginalen */
-  font-size: 0.5em; /* Ändra storleken på ikonerna */
-  transform: translateY(0.5px); /* Ändra vertikal position */
-}
-
-.profile-content .socials a:hover {
-  color: #aaa;
-  transform: translateY(0);
-}
-
-.profile-content .socials i {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 /*BOOKS*/
 
 .books{
@@ -714,3 +623,72 @@ margin-right: 120px;
   align-items: center;
 }
 
+/* Profile-card */
+#text-profile {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+
+
+#profile {
+
+ padding 2em;
+  transform: rotate(30deg);
+  visibility: hidden;
+  z-index: 1;   
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  font-size: 30%;
+  height: 10em;
+  width: 7em;
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 1s ease-in-out;
+}
+
+#profile.active {
+  visibility: visible;
+
+
+}
+
+#profile.active.big {
+  transform: scale(10) translate(-107%, 11%);
+  transition: transform 0.7s ease;
+}
+
+
+#profile-background {background-size: cover;
+width: 7em;
+background-image: url(images/landet.jpeg);
+height: 5em;}
+
+#profile-text {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 1em;
+  width: 7em;
+  height: 5em;
+  background-color: white;
+}
+
+#profile-pic {
+  border: 1px solid #fff;
+  width: 3em; 
+  height: 3em;
+  background-position: center;
+  margin-top: 50%;
+  margin-left: 24%;
+  position: absolute;
+  background-image: url(images/Sebastian.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius: 50%;
+}
+
+#text {
+  font-size: 0.5em;
+  padding-bottom: 1em;
+}
+h5 {
+  padding-top: 1em;
+}

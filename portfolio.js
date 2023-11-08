@@ -9,7 +9,7 @@ const heading = document.querySelector(".heading-text");
 let repoText = document.querySelector(".repo-text");
 let repoText2 = document.querySelector(".repo-text2");
 let mediumText = document.querySelector(".medium-text");
-let profileCard = document.querySelector('.container-profile');
+let profileCard = document.getElementById('profile');
 let profilePic = document.querySelector('.profile-picture');
 let text = document.querySelector(".text");
 let images = document.querySelector(".container");
@@ -44,11 +44,11 @@ setTimeout(function() {
 
 setTimeout(function() {
          repoText.classList.add('active');
-}, 7000);
+}, 6000);
 
 setTimeout(function() {
          repoText2.classList.add('active');
-}, 8000);
+}, 7000);
 
 
 

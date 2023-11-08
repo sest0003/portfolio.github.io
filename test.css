@@ -1,0 +1,16 @@
+
+#profile {
+    font-size: 133%;
+    border: solid 2px;
+    height: 10em;
+    width: 7em;
+}
+
+#profile-background {background-size: cover;
+width: 7em;
+background-image: url(images/landet.jpeg);
+height: 5em;}
+
+#profile-text {
+    
+}
