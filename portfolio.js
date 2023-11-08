@@ -40,21 +40,21 @@ setTimeout(function() {
 
 setTimeout(function() {
          profileCard.classList.add('active');
-}, 490);
+}, 4900);
 
 setTimeout(function() {
          repoText.classList.add('active');
-}, 700);
+}, 7000);
 
 setTimeout(function() {
          repoText2.classList.add('active');
-}, 800);
+}, 8000);
 
 
 
 setTimeout(function showImage() {
    wrapper.classList.add('active');
-}, 800);
+}, 8000);
 
 profileCard.addEventListener("click", function() {
   profileCard.classList.toggle("big");
