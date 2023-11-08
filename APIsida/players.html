@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Player List</title>
+</head>
+<body>
+    <h2>Player List for the Team</h2>
+    <div id="player-list" th:each="player : ${players}">
+        
+        <div>
+            <span th:text="${player.name}"></span>
+            <span th:text="${player.position}"></span>
+            <img src="${player.photo}" alt="">
+
+        </div>
+
+    </div>
+
+    <script src="players.js"></script>
+</body>
+</html>
