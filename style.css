@@ -39,7 +39,6 @@ text-align: center;
 .row{
  display:flex;
   justify-content: center;
-  margin-left: 416px;
 }
 
 .display-text{
@@ -68,8 +67,7 @@ justify-content: center;
 
 
 #profile {
-
- padding 2em;
+  padding-bottom: 1em;
   transform: rotate(30deg);
   visibility: hidden;
   z-index: 1;   

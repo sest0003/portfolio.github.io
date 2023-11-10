@@ -54,7 +54,7 @@ setTimeout(function() {
 
 setTimeout(function showImage() {
    wrapper.classList.add('active');
-}, 8000);
+}, 7500);
 
 profileCard.addEventListener("click", function() {
   profileCard.classList.toggle("big");
