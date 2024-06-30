@@ -36,7 +36,9 @@ text-align: center;
 }
 
 
-.row{
+.row {
+  margin-top: -5%;
+  margin-left: 22%;
  display:flex;
   justify-content: center;
   flex-direction: column;
@@ -68,6 +70,8 @@ justify-content: center;
 
 
 #profile {
+ 
+  user-select: none; /* Gör så att texten inte kan markeras */
   padding-bottom: 1em;
   transform: rotate(30deg);
   visibility: hidden;
@@ -87,7 +91,7 @@ justify-content: center;
 }
 
 #profile.active.big {
-  transform: scale(10) translate(-0%, 11%);
+  transform: scale(4) translate(-0%, 11%);
   transition: transform 0.7s ease;
 }
 
