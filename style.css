@@ -389,6 +389,11 @@ blur: 15%;
 
 }
 
+.popup-img, .fullview, .diplom{
+  width: 140%;
+  height: 21em;
+}
+
 
 .me-img{
   margin-bottom: -1em;
@@ -425,7 +430,7 @@ blur: 15%;
 
 .text-wrapper {
     width: 140%;
-    margin-left: -20%;
+    margin-left: -22%;
     background: #265c65;
     display: flex;
     padding: 35px;
