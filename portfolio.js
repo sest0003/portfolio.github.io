@@ -25,22 +25,16 @@ const popup9 = document.getElementById("popup9");
 let closeButtons = document.getElementsByClassName("closeButton");
 let popups = [popup1, popup2, popup3, popup4, popup5, popup6, popup7, popup8, popup9];  
 
-
-
-
-
-
-
-//toogle() ska bara aktiveras när ett card är aktiverat.
+// Toggle function only activates when a card is active
 let activeCard = null;
 
-// Lägg till en klick-händelse för varje "card-link" element
+// Add click event for each card element
 for (const element of cards) {
   const card = element;
   card.addEventListener("click", function(e) {
-    e.preventDefault(); // Förhindra att länken följs
+    e.preventDefault(); // Prevent default link behavior
     if (card.classList.contains("active")) {
-      toggle(card.id, card); // Anropa toggle-funktionen när klickade kortet är aktivt
+      toggle(card.id, card); // Call toggle function when active card is clicked
     } else {
       if (activeCard) {
         activeCard.classList.remove("active");
@@ -51,7 +45,7 @@ for (const element of cards) {
   });
 }
 
-// Lägg till efter den befintliga card-lyssnaren
+// Add click handler for profile card
 const cardProfile = document.getElementById('card-profile');
 if (cardProfile) {
     cardProfile.addEventListener("click", function() {
@@ -64,10 +58,8 @@ if (cardProfile) {
     });
 }
 
-// Pop windows and CARDS
-
+// Handle popup windows and card interactions
 function toggle(clickedCardId, card) {
-    //CARD1
     if (clickedCardId === "card1") {
         popups.forEach(function(popup) {
             if (popup !== popup1) {
@@ -78,7 +70,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup1);
     }
-    //CARD2
     else if (clickedCardId === "card2") {
         popups.forEach(function(popup) {
             if (popup !== popup2) {
@@ -89,7 +80,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup2);
     }
-    //CARD3
     else if (clickedCardId === "card3") {
         popups.forEach(function(popup) {
             if (popup !== popup3) {
@@ -100,7 +90,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup3);
     }
-    //Card 4
     else if (clickedCardId === "card4") {
         popups.forEach(function(popup) {
             if (popup !== popup4) {
@@ -111,7 +100,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup4);
     }
-    //CARD 5
     else if (clickedCardId === "card5") {
         popups.forEach(function(popup) {
             if (popup !== popup5) {
@@ -122,7 +110,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup5);
     }
-    //CARD 6
     else if (clickedCardId === "card6") {
         popups.forEach(function(popup) {
             if (popup !== popup6) {
@@ -133,7 +120,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup6);
     }   
-    //CARD 7
     else if (clickedCardId === "card7") {
         popups.forEach(function(popup) {
             if (popup !== popup8) {
@@ -144,7 +130,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup8);
     }
-    // Profile card
     else if (clickedCardId === "card-profile") {
         popups.forEach(function(popup) {
             if (popup !== popup7) {
@@ -155,7 +140,6 @@ function toggle(clickedCardId, card) {
         });
         scroll(popup7);
     }
-    //CARD 8
     else if (clickedCardId === "card8") {
         popups.forEach(function(popup) {
             if (popup !== popup9) {
@@ -168,8 +152,7 @@ function toggle(clickedCardId, card) {
     }
 }
 
-// closeButton
-
+// Handle popup closing
 function closePopups() {
   popups.forEach(function(popup) {
    popup.classList.remove("active");
@@ -177,39 +160,33 @@ function closePopups() {
 
   activeCard.classList.remove("active");
 
-  document.body.style.height = "auto"; // Återställ höjden på sidan till auto
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth" // Scrolla till toppen av sidan
-  });
-}
-
-
-//Scroll to view and show popup
-function scroll(popupElement) {
-  // Hitta alla wrappers
-  const wrappers = document.querySelectorAll('.wrapper');
-  
-  // Dölj wrappers
-  wrappers.forEach(wrapper => {
-    wrapper.style.display = 'none';
-  });
-
-  // Aktivera popup
-  popupElement.classList.add("active");
-  popupElement.style.position = 'relative';
-  popupElement.style.top = '0';
-  
-  // Scrolla till toppen
+  document.body.style.height = "auto";
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 }
 
-//CloseButton
-   function closeButton() {
-     // Visa wrappers igen
+// Scroll to view and show popup
+function scroll(popupElement) {
+  const wrappers = document.querySelectorAll('.wrapper');
+  
+  wrappers.forEach(wrapper => {
+    wrapper.style.display = 'none';
+  });
+
+  popupElement.classList.add("active");
+  popupElement.style.position = 'relative';
+  popupElement.style.top = '0';
+  
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+// Handle close button functionality
+function closeButton() {
      const wrappers = document.querySelectorAll('.wrapper');
      wrappers.forEach(wrapper => {
        wrapper.style.display = 'flex';
@@ -225,34 +202,31 @@ function scroll(popupElement) {
        top: 0,
        behavior: "smooth"
      });
-    console.log("closeButton har klickats på!");
 }
 
-// Lägg till klickhanterare för varje closeButton-element
+// Add click handlers for close buttons
 for (var i = 0; i < closeButtons.length; i++) {
   closeButtons[i].addEventListener("click", closeButton);
 }
 
-//header-Clicks
+// Header click handlers
 const card1 = document.getElementById("card1");
 const card5 = document.getElementById("card5");
 
 function projectClick() {
  if (card1.classList.contains("active")) {
-card1.classList.remove("active");
+    card1.classList.remove("active");
 } else {
-card1.classList.add("active");}
-console.log("p-click!");
+    card1.classList.add("active");
 }
-
-
+}
 
 function certifClick() {
  if (card5.classList.contains("active")) {
-card5.classList.remove("active");
-}else {
-card5.classList.add("active");}
-console.log("C-click!");
+    card5.classList.remove("active");
+} else {
+    card5.classList.add("active");
+}
 }
 
 
