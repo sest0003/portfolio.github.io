@@ -22,8 +22,9 @@ const popup6 = document.getElementById("popup6");
 const popup7 = document.getElementById("popup-profile");
 const popup8 = document.getElementById("popup8");
 const popup9 = document.getElementById("popup9");
+const popup10 = document.getElementById("popup10");
 let closeButtons = document.getElementsByClassName("closeButton");
-let popups = [popup1, popup2, popup3, popup4, popup5, popup6, popup7, popup8, popup9];  
+let popups = [popup1, popup2, popup3, popup4, popup5, popup6, popup7, popup8, popup9, popup10];  
 
 
 
@@ -165,6 +166,17 @@ function toggle(clickedCardId, card) {
             }
         });
         scroll(popup9);
+    }
+
+    else if (clickedCardId === "card9") {
+        popups.forEach(function(popup) {
+            if (popup !== popup10) {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        });
+        scroll(popup10);
     }
 }
 
